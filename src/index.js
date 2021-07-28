@@ -84,17 +84,6 @@ function buttonLoadVisability(remove, add) {
   buttonLoadMore.classList.remove(remove);
   buttonLoadMore.classList.add(add);
 };
- 
- 
-
-// function showBtnLoadMore() {
-//   buttonLoadVisability("load-more","is-visible");
-// };
-
-
-// function hideBtnLoadMore() {
-//   buttonLoadVisability("is-visible","load-more");
-// }
 
 let showBtnLoadMore = () => buttonLoadVisability("load-more", "is-visible");
 let hideBtnLoadMore = () => buttonLoadVisability("is-visible","load-more");
