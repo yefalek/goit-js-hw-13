@@ -80,14 +80,21 @@ function clearImagesContainer() {
   imageBox.innerHTML = '';
 }
 
-
-function showBtnLoadMore() {
-    buttonLoadMore.classList.remove("load-more");
-    buttonLoadMore.classList.add("is-visible"); 
+function buttonLoadVisability(remove, add) {
+  buttonLoadMore.classList.remove(remove);
+  buttonLoadMore.classList.add(add);
 };
+ 
+ 
+
+// function showBtnLoadMore() {
+//   buttonLoadVisability("load-more","is-visible");
+// };
 
 
-function hideBtnLoadMore() {
-    buttonLoadMore.classList.remove("is-visible");
-    buttonLoadMore.classList.add("load-more");
-}
+// function hideBtnLoadMore() {
+//   buttonLoadVisability("is-visible","load-more");
+// }
+
+let showBtnLoadMore = () => buttonLoadVisability("load-more", "is-visible");
+let hideBtnLoadMore = () => buttonLoadVisability("is-visible","load-more");
